@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+</head>
+<body>
+<center>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td><input type="number" id="age"></td>
+    </tr>
+    <tr>
+        <th>Gender</th>
+        <td><input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+        </td>
+    </tr>
+    <tr>
+        <th>Course</th>
+        <td>
+            <select class="course">
+                <option>javascript</option>
+                <option>php</option>
+                <option>html,css</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>E-mail</th>
+        <td><input type="email" id="email"></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+           
+            <button type="button" onclick="studentinfo()">save</button>
+        </td>
+    </tr>
+</table><br><br>
+
+<table id="studenttable" border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Course</th>
+        <th>E-mail</th>
+        <th>Action</th>
+    </tr>
+    <tbody id="studentdata"></tbody>
+</table>
+</center>
+
+</body>
+</html>
